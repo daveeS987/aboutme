@@ -46,7 +46,7 @@ if (kidsQuestion === 'yes' || kidsQuestion === 'y') {
 }
 
 // Son question
-var sonQuestion = prompt(userName + ', is my son 2 years old?').toLowerCase();
+var sonQuestion = prompt(userName + ', do I have a 2 year old son?').toLowerCase();
 while(validAnswersArr.indexOf(sonQuestion) === -1) {
   sonQuestion = prompt(userName + ', is my son 2 years old? Please answer with a yes or no').toLowerCase();
 }
