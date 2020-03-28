@@ -4,6 +4,7 @@ var userName = prompt('What is your name?');
 console.log('userName :' + userName);
 alert(userName + ', welcome to my site!');
 
+var scoreCounter = 0;
 var validAnswersArr = ['y', 'yes', 'no', 'n'];
 
 // Birth Home Question
@@ -13,7 +14,9 @@ while(validAnswersArr.indexOf(myBirthHome) === -1) {
 }
 if (myBirthHome === 'yes' || myBirthHome === 'y') {
   //console.log(userName + ', you are correct!');
+  scoreCounter++;
   alert(userName + ', you are correct!');
+
 } else {
   //console.log(userName + ', that is incorrect!');
   alert(userName + ', that is incorrect!');
@@ -26,6 +29,7 @@ while(validAnswersArr.indexOf(armyQuestion) === -1) {
 }
 if (armyQuestion === 'yes' || armyQuestion === 'y') {
   //console.log(userName + ', you are correct!');
+  scoreCounter++;
   alert(userName + ', you are correct!');
 } else {
   //console.log(userName + ', that is incorrect!');
@@ -39,6 +43,7 @@ while(validAnswersArr.indexOf(kidsQuestion) === -1) {
 }
 if (kidsQuestion === 'yes' || kidsQuestion === 'y') {
   //console.log(userName + ', you are correct!');
+  scoreCounter++;
   alert(userName + ', you are correct!');
 } else {
   //console.log(userName + ', that is incorrect!');
@@ -52,6 +57,7 @@ while(validAnswersArr.indexOf(sonQuestion) === -1) {
 }
 if (sonQuestion === 'yes' || sonQuestion === 'y') {
   //console.log(userName + ', you are correct!');
+  scoreCounter++;
   alert(userName + ', you are correct!');
 } else {
   //console.log(userName + ', that is incorrect!');
@@ -65,9 +71,73 @@ while(validAnswersArr.indexOf(workQuestion) === -1) {
 }
 if (workQuestion === 'yes' || workQuestion === 'y') {
   //console.log(userName + ', you are correct!');
+  scoreCounter++;
   alert(userName + ', you are correct!');
 } else {
   //console.log(userName + ', that is incorrect!');
   alert(userName + ', that is incorrect!');
 }
 
+// Question 6: Numeric Question
+// For Loop Version
+var actualAnswer = 5;
+var userAnswer1;
+for (var attempts = 0; attempts < 4; attempts++) {
+  userAnswer1 = Number(prompt('How many years did I serve in the army?'));
+  if (userAnswer1 > actualAnswer) {
+    alert('That\'s too high');
+  } else if (userAnswer1 < actualAnswer) {
+    alert('That\'s too low');
+  } else if (userAnswer1 === actualAnswer) {
+    alert('That\'s correct!');
+    scoreCounter++;
+    break;
+  }
+}
+if (attempts === 4) {
+  alert(userName + ', the correct answer is 5!');
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//While Loop Version
+// var attemptsForQuestion6 = 0;
+// var userAnswer;
+// while (attemptsForQuestion6 < 4) {
+//   userAnswer = Number(prompt(userName + ', how many years did I serve in the Army?'));
+//   if (userAnswer > actualAnswer) {
+//     alert(userName + ', that\'s too high!');
+//   } else if (userAnswer < actualAnswer) {
+//     alert(userName + ', that\'s too low!');
+//   } else if (userAnswer === actualAnswer) {
+//     alert(userName + ', that\'s correct!');
+//     break;
+//   }
+//   attemptsForQuestion6++;
+// }
+// if (attemptsForQuestion6 === 4) {
+//   alert(userName + ', the correct answer is 5!');
+// }
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// Question 7: Multiple Correct Answers
+var correctAnswerArray = ['tesla', 'spacex', 'apple', 'google', 'amazon', 'microsoft', 'netflix'];
+var attemptForQuestion7 = 0;
+var userAnswer7;
+
+while (attemptForQuestion7 < 6) {
+  userAnswer7 = prompt(userName + ', what tech company do you think I would love to work for?').toLowerCase();
+  for (var i = 0; i < correctAnswerArray.length; i++) {
+    if (userAnswer7 === correctAnswerArray[i]) {
+      alert('That is correct!!');
+      scoreCounter++;
+      attemptForQuestion7 = 5;
+    }
+  }
+  attemptForQuestion7++;
+}
+
+if (attemptForQuestion7 === 6) {
+  alert(userName + ', I would love to work for the following companies: SpaceX, Tesla, Amazon, Apple, Google, Microsoft, or Netflix');
+}
+
+alert(userName + ', you answered ' + scoreCounter + ' questions correctly');
