@@ -1,15 +1,23 @@
 body {
-  background-color: black;
+  background-color: rgb(33, 31, 31);
   color: azure;
 }
 
 h1 {
   font-family: Helvetica;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+#aboutme {
+  margin: 30px;
+  border-style: solid;
+  border-color: rgb(235, 235, 235);
+  border-width: 30px;
+  padding: 50px;
 }
 
 h2 {
@@ -25,8 +33,19 @@ p {
   font-family: Helvetica;
   font-size: 15px;
   text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 80px;
-  padding-right: 80px;  
+  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 100px;  
 }
+
+ul {
+  text-align: center;
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: decimal;
+  text-align: center;
+}
+
