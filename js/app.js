@@ -141,3 +141,5 @@ if (attemptForQuestion7 === 6) {
 }
 
 alert(userName + ', you answered ' + scoreCounter + ' questions correctly');
+
+
