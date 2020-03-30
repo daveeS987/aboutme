@@ -44,7 +44,7 @@ ul {
   list-style-type: circle;
 }
 
-ol {
+ol > li {
   list-style-type: decimal;
   text-align: center;
 }
