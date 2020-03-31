@@ -13,11 +13,11 @@ h1 {
 }
 
 #aboutme {
-  margin: 30px;
+  margin: 40px;
   border-style: solid;
   border-color: rgb(235, 235, 235);
-  border-width: 30px;
-  padding: 50px;
+  border-width: thin;
+  padding: 10px;
 }
 
 h2 {
@@ -36,7 +36,11 @@ p {
   padding-bottom: 80px;
   padding-top: 80px;
   padding-left: 100px;
-  padding-right: 100px;  
+  padding-right: 100px;
+  border-style: ridge;  
+  border-color: white;
+  border-width: thick;
+  
 }
 
 ul {
