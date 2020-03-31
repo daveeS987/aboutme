@@ -1,55 +1,63 @@
 body {
-  background-color: rgb(33, 31, 31);
-  color: azure;
+  background-color: rgb(48, 46, 46);
+  color: rgb(246, 250, 250);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
-  font-family: Helvetica;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-
-#aboutme {
-  margin: 40px;
+  padding: 20px;
   border-style: solid;
-  border-color: rgb(235, 235, 235);
-  border-width: thin;
-  padding: 10px;
+  border-width: 6px;
+  border-radius: 15px 15px 25px 25px;
+  margin: 20px 100px 20px 100px;
 }
 
 h2 {
-  font-family: Helvetica;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 10px;
-  padding-top: 10px;  
+  padding: 15px;
+  border-style: solid;
+  border-width: 2px;
+  margin: 20px 100px 20px 100px;
+  border-radius: 15px 15px 50px 50px;
 }
 
 p {
-  font-family: Helvetica;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
-  padding-bottom: 80px;
-  padding-top: 80px;
-  padding-left: 100px;
-  padding-right: 100px;
-  border-style: ridge;  
-  border-color: white;
-  border-width: thick;
-  
+  max-width: 50%;
+  margin: 80px auto 80px auto;
 }
 
 ul {
-  text-align: center;
-  list-style-type: circle;
+  list-style-type: disc;
+  width: 25%;
+  text-align: left;
+  margin: 60px auto 60px auto;
+  /* border-style: solid;
+  border-width: thin; */
+  padding-left: 80px;
+  padding-right: 40px;
 }
 
-ol > li {
+#work-history {
+  width: 10%;
+}
+
+ol {
   list-style-type: decimal;
-  text-align: center;
+  width: 25%;
+  /* border-style: solid;
+  border-width: 2px; */
+  margin: 40px auto 50px auto;
+  padding-left: 150px;
+}
+
+li {
+  font-size: 20px;
 }
 
