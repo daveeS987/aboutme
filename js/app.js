@@ -109,9 +109,8 @@ if (attempts === 4) {
 // While Loop Version
 
 // var attemptsForQuestion6 = 0;
-// var userAnswer;
 // while (attemptsForQuestion6 < 4) {
-//   userAnswer = Number(prompt(userName + ', how many years did I serve in the Army?'));
+//   var userAnswer = Number(prompt(userName + ', how many years did I serve in the Army?'));
 //   if (userAnswer > actualAnswer) {
 //     alert(userName + ', that\'s too high!');
 //   } else if (userAnswer < actualAnswer) {
