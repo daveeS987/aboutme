@@ -1,16 +1,19 @@
 'use strict';
 
-var userName = prompt('What is your name?');
-console.log('userName :' + userName);
-alert(userName + ', welcome to my site!');
-
+function getName() {
+  var userName = prompt('What is your name?');
+  console.log('userName :' + userName);
+  alert(userName + ', welcome to my site!');
+  return userName;
+}
+var userName = getName();
 var scoreCounter = 0;
 var validAnswersArr = ['y', 'yes', 'no', 'n'];
 
 
 // Question 1: Birth Home Question
 var myBirthHome = prompt(userName + ', am I from Houston?').toLowerCase();
-while(validAnswersArr.indexOf(myBirthHome) === -1) {
+while (validAnswersArr.indexOf(myBirthHome) === -1) {
   myBirthHome = prompt(userName + ', am I from Houston? Please answer with a yes or no').toLowerCase();
 }
 if (myBirthHome === 'yes' || myBirthHome === 'y') {
@@ -25,7 +28,7 @@ if (myBirthHome === 'yes' || myBirthHome === 'y') {
 
 // Question 2: Army Question
 var armyQuestion = prompt(userName + ', did I serve in the army?').toLowerCase();
-while(validAnswersArr.indexOf(armyQuestion) === -1) {
+while (validAnswersArr.indexOf(armyQuestion) === -1) {
   armyQuestion = prompt(userName + ', did I serve in the army? Please answer with a yes or no').toLowerCase();
 }
 if (armyQuestion === 'yes' || armyQuestion === 'y') {
@@ -40,7 +43,7 @@ if (armyQuestion === 'yes' || armyQuestion === 'y') {
 
 // Question 3: Kids Question
 var kidsQuestion = prompt(userName + ', do I have multiple kids?').toLowerCase();
-while(validAnswersArr.indexOf(kidsQuestion) === -1) {
+while (validAnswersArr.indexOf(kidsQuestion) === -1) {
   kidsQuestion = prompt(userName + ', do I have multiple kids? Please answer with a yes or no').toLowerCase();
 }
 if (kidsQuestion === 'yes' || kidsQuestion === 'y') {
@@ -55,7 +58,7 @@ if (kidsQuestion === 'yes' || kidsQuestion === 'y') {
 
 // Question 4: Son question
 var sonQuestion = prompt(userName + ', did I name my son after a spartan king?').toLowerCase();
-while(validAnswersArr.indexOf(sonQuestion) === -1) {
+while (validAnswersArr.indexOf(sonQuestion) === -1) {
   sonQuestion = prompt(userName + ', did I name my son after a spartan king? Please answer with a yes or no').toLowerCase();
 }
 if (sonQuestion === 'yes' || sonQuestion === 'y') {
@@ -70,7 +73,7 @@ if (sonQuestion === 'yes' || sonQuestion === 'y') {
 
 // Question 5: Age question
 var workQuestion = prompt(userName + ', am I in my 30\'s?').toLowerCase();
-while(validAnswersArr.indexOf(workQuestion) === -1) {
+while (validAnswersArr.indexOf(workQuestion) === -1) {
   workQuestion = prompt(userName + ', am I in my 30\'s? Please answer with a yes or no').toLowerCase();
 }
 if (workQuestion === 'yes' || workQuestion === 'y') {
