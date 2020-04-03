@@ -93,26 +93,28 @@ function askAgeQuestion() {
 }
 askAgeQuestion();
 
-// // Question 6: Numeric Question
-// // For Loop Version
-// var actualAnswer = 5;
-// var userAnswer1;
-// for (var attempts = 0; attempts < 4; attempts++) {
-//   userAnswer1 = Number(prompt('How many years did I serve in the army?'));
-//   if (userAnswer1 > actualAnswer) {
-//     alert('That\'s too high');
-//   } else if (userAnswer1 < actualAnswer) {
-//     alert('That\'s too low');
-//   } else if (userAnswer1 === actualAnswer) {
-//     alert('That\'s correct!');
-//     scoreCounter++;
-//     break;
-//   }
-// }
-// if (attempts === 4) {
-//   alert(userName + ', the correct answer is 5!');
-// }
-
+// Question 6: Numeric Question
+// For Loop Version
+function askNumericQuestion() {
+  var actualAnswer = 5;
+  var userAnswer1;
+  for (var attempts = 0; attempts < 4; attempts++) {
+    userAnswer1 = Number(prompt('How many years did I serve in the army?'));
+    if (userAnswer1 > actualAnswer) {
+      alert('That\'s too high');
+    } else if (userAnswer1 < actualAnswer) {
+      alert('That\'s too low');
+    } else if (userAnswer1 === actualAnswer) {
+      alert('That\'s correct!');
+      scoreCounter++;
+      break;
+    }
+  }
+  if (attempts === 4) {
+    alert(userName + ', the correct answer is 5!');
+  }
+}
+askNumericQuestion();
 // ///////////////////////////////////////////////////////////
 
 // // Question 6: Numeric Question
