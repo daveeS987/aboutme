@@ -139,27 +139,29 @@ askNumericQuestion();
 
 // //////////////////////////////////////////////////////////////////
 
-// // Question 7: Multiple Correct Answers
-// var correctAnswerArray = ['tesla', 'spacex', 'apple', 'google', 'amazon', 'microsoft', 'netflix'];
+// Question 7: Multiple Correct Answers
+function askMultipleChoiceQuestion() {
+  var correctAnswerArray = ['tesla', 'spacex', 'apple', 'google', 'amazon', 'microsoft', 'netflix'];
 
-// for (var i = 0; i < 6; i++) {
-//   var userAnswer7 = prompt(userName + ', what tech company do you think I would love to work for?').toLowerCase();
-//   for (var j = 0; j < correctAnswerArray.length; j++) {
-//     if (userAnswer7 === correctAnswerArray[j]) {
-//       alert('That is correct! I would love to work for the following companies: SpaceX, Tesla, Amazon, Apple, Google, Microsoft, or Netflix');
-//       scoreCounter++;
-//       i = 6;
-//       break;
-//     }
-//   }
-//   if (i < 5) {
-//     alert('Please try again');
-//   }
-// }
-// if (i === 6) {
-//   alert('I would love to work for the following companies: SpaceX, Tesla, Amazon, Apple, Google, Microsoft, or Netflix');
-// }
-
+  for (var i = 0; i < 6; i++) {
+    var userAnswer7 = prompt(userName + ', what tech company do you think I would love to work for?').toLowerCase();
+    for (var j = 0; j < correctAnswerArray.length; j++) {
+      if (userAnswer7 === correctAnswerArray[j]) {
+        alert('That is correct! I would love to work for the following companies: SpaceX, Tesla, Amazon, Apple, Google, Microsoft, or Netflix');
+        scoreCounter++;
+        i = 6;
+        break;
+      }
+    }
+    if (i < 5) {
+      alert('Please try again');
+    }
+  }
+  if (i === 6) {
+    alert('I would love to work for the following companies: SpaceX, Tesla, Amazon, Apple, Google, Microsoft, or Netflix');
+  }
+}
+askMultipleChoiceQuestion();
 // // // While Loop Version ////////////////////////////
 // // var attemptForQuestion7 = 0;
 // // while (attemptForQuestion7 < 6) {
