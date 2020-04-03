@@ -184,5 +184,7 @@ askMultipleChoiceQuestion();
 // // }
 // // ///////////////////////////////////////////////////
 
-// alert(userName + ', you answered ' + scoreCounter + ' questions correctly');
-
+function giveCorrectAnswers() {
+  alert(userName + ', you answered ' + scoreCounter + ' questions correctly');
+}
+giveCorrectAnswers();
