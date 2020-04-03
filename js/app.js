@@ -43,21 +43,22 @@ function askArmyQuestion() {
   }
 }
 askArmyQuestion();
-// // Question 3: Kids Question
-// var kidsQuestion = prompt(userName + ', do I have multiple kids?').toLowerCase();
-// while (validAnswersArr.indexOf(kidsQuestion) === -1) {
-//   kidsQuestion = prompt(userName + ', do I have multiple kids? Please answer with a yes or no').toLowerCase();
-// }
-// if (kidsQuestion === 'yes' || kidsQuestion === 'y') {
-//   //console.log(userName + ', you are correct!');
-//   scoreCounter++;
-//   alert(userName + ', you are correct!');
-// } else {
-//   //console.log(userName + ', that is incorrect!');
-//   alert(userName + ', that is incorrect!');
-// }
-
-
+// Question 3: Kids Question
+function askKidsQuestion() {
+  var kidsQuestion = prompt(userName + ', do I have multiple kids?').toLowerCase();
+  while (validAnswersArr.indexOf(kidsQuestion) === -1) {
+    kidsQuestion = prompt(userName + ', do I have multiple kids? Please answer with a yes or no').toLowerCase();
+  }
+  if (kidsQuestion === 'yes' || kidsQuestion === 'y') {
+    //console.log(userName + ', you are correct!');
+    scoreCounter++;
+    alert(userName + ', you are correct!');
+  } else {
+    //console.log(userName + ', that is incorrect!');
+    alert(userName + ', that is incorrect!');
+  }
+}
+askKidsQuestion();
 // // Question 4: Son question
 // var sonQuestion = prompt(userName + ', did I name my son after a spartan king?').toLowerCase();
 // while (validAnswersArr.indexOf(sonQuestion) === -1) {
