@@ -59,20 +59,22 @@ function askKidsQuestion() {
   }
 }
 askKidsQuestion();
-// // Question 4: Son question
-// var sonQuestion = prompt(userName + ', did I name my son after a spartan king?').toLowerCase();
-// while (validAnswersArr.indexOf(sonQuestion) === -1) {
-//   sonQuestion = prompt(userName + ', did I name my son after a spartan king? Please answer with a yes or no').toLowerCase();
-// }
-// if (sonQuestion === 'yes' || sonQuestion === 'y') {
-//   //console.log(userName + ', you are correct!');
-//   scoreCounter++;
-//   alert(userName + ', you are correct!');
-// } else {
-//   //console.log(userName + ', that is incorrect!');
-//   alert(userName + ', that is incorrect!');
-// }
-
+// Question 4: Son question
+function askSonQuestion() {
+  var sonQuestion = prompt(userName + ', did I name my son after a spartan king?').toLowerCase();
+  while (validAnswersArr.indexOf(sonQuestion) === -1) {
+    sonQuestion = prompt(userName + ', did I name my son after a spartan king? Please answer with a yes or no').toLowerCase();
+  }
+  if (sonQuestion === 'yes' || sonQuestion === 'y') {
+    //console.log(userName + ', you are correct!');
+    scoreCounter++;
+    alert(userName + ', you are correct!');
+  } else {
+    //console.log(userName + ', that is incorrect!');
+    alert(userName + ', that is incorrect!');
+  }
+}
+askSonQuestion();
 
 // // Question 5: Age question
 // var workQuestion = prompt(userName + ', am I in my 30\'s?').toLowerCase();
