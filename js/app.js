@@ -27,21 +27,22 @@ function askBirthHomeQuestion() {
   }
 }
 askBirthHomeQuestion();
-// // Question 2: Army Question
-// var armyQuestion = prompt(userName + ', did I serve in the army?').toLowerCase();
-// while (validAnswersArr.indexOf(armyQuestion) === -1) {
-//   armyQuestion = prompt(userName + ', did I serve in the army? Please answer with a yes or no').toLowerCase();
-// }
-// if (armyQuestion === 'yes' || armyQuestion === 'y') {
-//   //console.log(userName + ', you are correct!');
-//   scoreCounter++;
-//   alert(userName + ', you are correct!');
-// } else {
-//   //console.log(userName + ', that is incorrect!');
-//   alert(userName + ', that is incorrect!');
-// }
-
-
+// Question 2: Army Question
+function askArmyQuestion() {
+  var armyQuestion = prompt(userName + ', did I serve in the army?').toLowerCase();
+  while (validAnswersArr.indexOf(armyQuestion) === -1) {
+    armyQuestion = prompt(userName + ', did I serve in the army? Please answer with a yes or no').toLowerCase();
+  }
+  if (armyQuestion === 'yes' || armyQuestion === 'y') {
+    //console.log(userName + ', you are correct!');
+    scoreCounter++;
+    alert(userName + ', you are correct!');
+  } else {
+    //console.log(userName + ', that is incorrect!');
+    alert(userName + ', that is incorrect!');
+  }
+}
+askArmyQuestion();
 // // Question 3: Kids Question
 // var kidsQuestion = prompt(userName + ', do I have multiple kids?').toLowerCase();
 // while (validAnswersArr.indexOf(kidsQuestion) === -1) {
