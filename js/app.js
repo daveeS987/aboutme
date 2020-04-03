@@ -76,20 +76,22 @@ function askSonQuestion() {
 }
 askSonQuestion();
 
-// // Question 5: Age question
-// var workQuestion = prompt(userName + ', am I in my 30\'s?').toLowerCase();
-// while (validAnswersArr.indexOf(workQuestion) === -1) {
-//   workQuestion = prompt(userName + ', am I in my 30\'s? Please answer with a yes or no').toLowerCase();
-// }
-// if (workQuestion === 'yes' || workQuestion === 'y') {
-//   //console.log(userName + ', you are correct!');
-//   scoreCounter++;
-//   alert(userName + ', you are correct!');
-// } else {
-//   //console.log(userName + ', that is incorrect!');
-//   alert(userName + ', that is incorrect!');
-// }
-
+// Question 5: Age question
+function askAgeQuestion() {
+  var workQuestion = prompt(userName + ', am I in my 30\'s?').toLowerCase();
+  while (validAnswersArr.indexOf(workQuestion) === -1) {
+    workQuestion = prompt(userName + ', am I in my 30\'s? Please answer with a yes or no').toLowerCase();
+  }
+  if (workQuestion === 'yes' || workQuestion === 'y') {
+    //console.log(userName + ', you are correct!');
+    scoreCounter++;
+    alert(userName + ', you are correct!');
+  } else {
+    //console.log(userName + ', that is incorrect!');
+    alert(userName + ', that is incorrect!');
+  }
+}
+askAgeQuestion();
 
 // // Question 6: Numeric Question
 // // For Loop Version
